@@ -13,10 +13,12 @@ export interface IUser{
 
 export interface UserListProps {
     users: IUser[];
+    b: number
   }
 
 export interface UserItemProps{
     user: IUser
+    b : number
   }
 
 export interface ListProps<T>{
