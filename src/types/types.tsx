@@ -13,12 +13,11 @@ export interface IUser{
 
 export interface UserListProps {
     users: IUser[];
-    b: number
   }
 
 export interface UserItemProps{
     user: IUser
-    b : number
+    onClick: (user: IUser) => void
   }
 
 export interface ListProps<T>{

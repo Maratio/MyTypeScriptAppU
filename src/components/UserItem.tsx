@@ -1,11 +1,11 @@
 import React, { FC } from 'react'
 import { UserItemProps } from '../types/types'
 
-const UserItem: FC<UserItemProps> = ({user,b}) => {
+const UserItem: FC<UserItemProps> = ({user,onClick}) => {
     return(
-        <div  style={{ padding: 15, border: "1px solid gray"}}>
+        <div onClick={() => onClick(user)}  style={{ padding: 15, border: "1px solid gray"}}>
           {user.id}. {user.name} проживает в городе {user.address.city} на улице{" "}
-          {user.address.street} {b}
+          {user.address.street}
         </div>
     )
 }
